@@ -25,7 +25,11 @@
 
     <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
     <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
-    <style>
+    <link rel="import" href="./bower_components/polymer/polymer.html">
+    <link rel="import" href="./bower_components/paper-checkbox/paper-checkbox.html">
+    <link rel="import" href="./bower_components/iron-flex-layout/iron-flex-layout.html">
+
+    <style include="iron-flex iron-flex-alignment">
       body {
         margin: 0;
         font-family: 'Roboto', 'Noto', sans-serif;
@@ -34,9 +38,14 @@
         background-color: #eeeeee;
       }
     </style>
+
   </head>
   <body>
-    text
+    <div class="layout vertical" style="height: 100%">
+        <paper-checkbox class="checkbox-1" checked></paper-checkbox>
+        <paper-checkbox class="checkbox-1" checked></paper-checkbox>
+    </div>
+
 
   </body>
 </html>
