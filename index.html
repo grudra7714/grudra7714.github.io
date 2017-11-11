@@ -34,18 +34,27 @@
         margin: 0;
         font-family: 'Roboto', 'Noto', sans-serif;
         line-height: 1.5;
-        min-height: 100vh;
+        width: 100%;
+        height: 100%;
         background-color: #eeeeee;
       }
+
+      .checkbox-2 {
+        --paper-checkbox-border-width: 1px;
+      }
+
+      .checkbox-3 {
+        --paper-checkbox-border-radius: 1px;
+      }
+
     </style>
 
   </head>
   <body>
-    <div class="layout vertical" style="height: 100%">
-        <paper-checkbox class="checkbox-1" checked></paper-checkbox>
-        <paper-checkbox class="checkbox-1" checked></paper-checkbox>
-    </div>
-
-
+      <div style="height: 100%; padding: 5px">
+          <paper-checkbox class="checkbox-1">Original</paper-checkbox>
+          <paper-checkbox class="checkbox-2">Checkbox with variable border width</paper-checkbox>
+          <paper-checkbox class="checkbox-3">Checkbox with variable border radius</paper-checkbox>
+      </div>
   </body>
 </html>
